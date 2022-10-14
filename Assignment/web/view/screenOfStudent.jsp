@@ -1,22 +1,10 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><title>
-	View Schedule
-</title><link rel="Stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" type="text/css"><link rel="Stylesheet" href="../fu.css" type="text/css"><link rel="Stylesheet" href="../JavaScript/jquery.css" type="text/css"><link rel="Stylesheet" href="../JavaScript/jquery-ui.css" type="text/css"><link rel="Stylesheet" href="../JavaScript/jquery.alerts.css" type="text/css">
-    
-    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="../JavaScript/jquery.min.js" type="text/javascript"></script>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title> View Schedule</title>
 
-    <script src="../JavaScript/jquery_002.js" type="text/javascript"></script>
-
-    <script src="../JavaScript/jquery_003.js" type="text/javascript"></script>
-
-    <script src="../JavaScript/jquery.js" type="text/javascript"></script>
-
-    <script src="../JavaScript/jquery-1.8.3.js" type="text/javascript"></script>
-
-    <script src="../JavaScript/jquery-ui.js" type="text/javascript"></script>
-
-    <script src="../JavaScript/jquery.alerts.js" type="text/javascript"></script>
-    
-    <link rel="Stylesheet" href="../Content/bootstrap.css" type="text/css"><link rel="Stylesheet" href="../Content/bootstrap.min.css" type="text/css"><link rel="Stylesheet" href="../Content/bootstrap-theme.min.css" type="text/css">
+<
+<link rel="Stylesheet" href="../JavaScript/jquery.alerts.css" type="text/css">
 
     <style type="text/css">
         .style1 {
@@ -35,15 +23,12 @@
 
                 <h1><span>FPT University Academic Portal</span>
                 </h1>
-
             </div>
             <div class="col-md-4">
                 <table>
                     <tbody><tr>
                         <td colspan="2" class="auto-style1"><strong>FAP mobile app (myFAP) is ready at</strong></td>
-
                     </tr>
-                    
                 </tbody></table>
             </div>
         </div>
@@ -71,7 +56,6 @@ function __doPostBack(eventTarget, eventArgument) {
     }
 }
 </script>
-
 
 <div>
 
@@ -252,8 +236,6 @@ function __doPostBack(eventTarget, eventArgument) {
     <div id="ctl00_mainContent_divfoot"><ul><li>(<font color="green">attended</font>): TrangNTHHE163554 had attended this activity / Nguyễn Thị Hà Trang đã tham gia hoạt động này</li><li>(<font color="red">absent</font>): TrangNTHHE163554 had NOT attended this activity / Nguyễn Thị Hà Trang đã vắng mặt buổi này</li>   <li>(-): no data was given / chưa có dữ liệu</li> </ul></div>
     <p>
     </p>
-    
-
                                 </div>
                             </td>
                         </tr>
@@ -315,7 +297,6 @@ function __doPostBack(eventTarget, eventArgument) {
 
     <script type="text/javascript">
         var isClose = false;
-
         
         document.onkeydown = checkKeycode;
         function checkKeycode(e) {
@@ -350,7 +331,4 @@ function __doPostBack(eventTarget, eventArgument) {
             }
             return request;
         }
-       
     </script>
-
-
