@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import modal.Campus;
+import model.Campus;
 
 
 public class CampusDBcontext extends DBContext{

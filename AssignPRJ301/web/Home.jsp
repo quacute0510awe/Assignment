@@ -23,16 +23,10 @@
                             
                             <td class="d-flex align-items-start"  >
                                 <ul style="font-size: 14px;">
-                                    <li><a href="#" id = "styleHref">University timetable</a> (Lịch học)</li>
-                                    <li><a href="#" id = "styleHref">Tuition fee per course</a> (Biểu học phí)</li>
-                                    <li><a href="#" id = "styleHref">Weekly timetable</a> (Thời khóa biểu từng tuần)</li>
-                                    <li><a href="#" id = "styleHref">Blended Online Course (BLOC) Schedules </a>(Lịch học các môn theo phương pháp BLOC trong kỳ)</li>
-                                    <li><a href="#" id = "styleHref">Class timetable</a> (Xem thời khóa biểu của một lớp)</li>
-                                    <li><a href="#" id = "styleHref">View exam schedule </a>(Xem lịch thi)</li>
-                                    <li><a href="#" id = "styleHref">View Syllabuses</a>(Xem đề cương môn học)</li>
-                                    <li><a href="#" id = "styleHref">EduNext student guideline</a></li>
-                                    <li><a href="#" id = "styleHref">Help/Hỗ trợ</a></li>
-                                    <li><a href="#" id = "styleHref">Tài liệu hướng dẫn: Định hướng cho sinh viên</a></li>
+                                    
+                                    <li><a href="#" id = "styleHref">Weekly timetable</a></li>
+                                    <li><a href="#" id = "styleHref">Attendence Taking</a></li>
+                                    <li><a href="#" id = "styleHref">Attendence Report</a></li>
                                 </ul>
                             </td>
                         </tr>

@@ -11,12 +11,9 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import modal.User;
+import model.User;
 
-/**
- *
- * @author Khanh Manh
- */
+
 public class loginpageController extends HttpServlet {
 
     /**

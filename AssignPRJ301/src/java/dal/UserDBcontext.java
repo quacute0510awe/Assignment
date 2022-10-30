@@ -9,12 +9,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import modal.User;
+import model.User;
 
-/**
- *
- * @author Khanh Manh
- */
+
 public class UserDBcontext extends DBContext {
 
     public User getUserByUserPass(String cid, String username, String password) {
