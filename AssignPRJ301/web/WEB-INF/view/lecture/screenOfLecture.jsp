@@ -1,5 +1,11 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : screenOfLecture
+    Created on : Nov 7, 2022, 7:41:43 PM
+    Author     : MY MSI
+--%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 
 <head style = "margin-left: 20px;font-weight: 100;">

@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<%-- 
+    Document   : attendenceTaking
+    Created on : Nov 7, 2022, 7:38:51 PM
+    Author     : MY MSI
+--%>
 
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Attendence Taking</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
     </head>
     <body>
         <form action="">

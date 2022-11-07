@@ -1,15 +1,17 @@
+<%-- 
+    Document   : attendenceReport
+    Created on : Nov 7, 2022, 7:40:37 PM
+    Author     : MY MSI
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <title>Attendance Report</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
-
-<body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Attendence Report</title>
+    </head>
+    <body>
     <h1>Attendence report</h1>
     <select name="group" id="">
         <option value="">SE1608_PRJ301</option>
