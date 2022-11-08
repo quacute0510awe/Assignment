@@ -8,9 +8,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Login</title>
+        <title>FPT University Academic Portal</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
+
     </head>
     <body style = "text-align: center;">
         <form action="login" method="POST">
@@ -34,12 +34,12 @@
                             <select class="form-select form-select-sm" aria-label=".form-select-sm example" style="width: 28%; margin: 0px 30px 0px 0px;" name="campus">
                                 <option selected value="0">Select Campus</option>
                                 <c:forEach items="${campuss}" var="c">
-                                    <option value="${c.getcID()}">${c.getcName()}</option>
+                                    <option value="${c.cID}">${c.cName}</option>
                                 </c:forEach>
                             </select>
 
                             <button style="background-color: rgb(66,133,244); border: none; color: white; padding: 5px 10px 5px; border-radius: 5px;">Đăng nhập</button>
-                            
+
                         </div>
                         <p style="color: red">${mess}</p>
                     </div>

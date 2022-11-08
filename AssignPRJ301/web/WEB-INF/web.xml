@@ -2,11 +2,19 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>loginController</servlet-name>
-        <servlet-class>controller.loginController</servlet-class>
+        <servlet-class>controller.LoginController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>loginpageController</servlet-name>
         <servlet-class>controller.loginpageController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogOutController</servlet-name>
+        <servlet-class>controller.LogOutController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WeeklyTimetableController</servlet-name>
+        <servlet-class>controller.WeeklyTimetableController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>loginController</servlet-name>
@@ -16,9 +24,20 @@
         <servlet-name>loginpageController</servlet-name>
         <url-pattern>/loginpage</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogOutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WeeklyTimetableController</servlet-name>
+        <url-pattern>/weeklyTimetable</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             1
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>login</welcome-file>
+    </welcome-file-list>
 </web-app>
