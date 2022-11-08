@@ -38,4 +38,11 @@ public class TimeSlot {
         this.sessions = sessions;
     }
     private ArrayList<Session> sessions = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "TimeSlot{" + "id=" + id + ", description=" + description + ", sessions=" + sessions + '}';
+    }
+    
+    
 }

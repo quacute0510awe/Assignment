@@ -93,5 +93,10 @@ public class Session {
     public void setAttanded(boolean attanded) {
         this.attanded = attanded;
     }
+
+    @Override
+    public String toString() {
+        return "Session{" + "id=" + id + ", group=" + group + ", room=" + room + ", lecturer=" + lecturer + ", slot=" + slot + ", atts=" + atts + ", date=" + date + ", index=" + index + ", attanded=" + attanded + '}';
+    }
     
 }

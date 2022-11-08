@@ -31,5 +31,10 @@ public class Campus {
     public void setcName(String cName) {
         this.cName = cName;
     }
+
+    @Override
+    public String toString() {
+        return "Campus{" + "cID=" + cID + ", cName=" + cName + '}';
+    }
     
 }

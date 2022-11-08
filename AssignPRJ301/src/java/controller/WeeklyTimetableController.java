@@ -1,14 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
+ */
 package controller;
 
-import dal.UserDBcontext;
-import java.io.IOException;
+import dal.GroupDBContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.User;
+import java.io.IOException;
+import java.util.ArrayList;
+import model.Group;
 
-public class loginpageController extends HttpServlet {
+/**
+ *
+ * @author Won Wolf
+ */
+public class WeeklyTimetableController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -21,23 +30,13 @@ public class loginpageController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        String cid = (String) request.getSession().getAttribute("cid");
-
-        UserDBcontext udb = new UserDBcontext();
-        User user = udb.getUserByUserPass(cid, username, password);
-
-        response.getWriter().print(user);
-        if (user != null) {
-            request.getSession().setAttribute("user", user);
-//            request.setAttribute("user", user);
-            request.getRequestDispatcher("Home.jsp").forward(request, response);
-        } else {
-            request.getSession().setAttribute("user", null);
-//            request.getSession().setAttribute("mess", "Tài khoản của bạn không được phép đăng nhập vào hệ thống");
-            response.sendRedirect("login");
-        }
+        response.setContentType("text/html;charset=UTF-8");
+        
+        GroupDBContext gdb = new GroupDBContext();
+        ArrayList<Group> listGroup = gdb.getAllGroup();
+        
+        request.setAttribute("listGroup", listGroup);
+        request.getRequestDispatcher("../student/WeeklyTimetable.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -10,15 +10,17 @@ public class User {
     String username;
     String password;
     int cid;
+    boolean role;
 
     public User() {
     }
 
-    public User(int uid, String username, String password, int cid) {
+    public User(int uid, String username, String password, int cid, boolean role) {
         this.uid = uid;
         this.username = username;
         this.password = password;
         this.cid = cid;
+        this.role = role;
     }
 
     public int getUid() {
@@ -53,9 +55,17 @@ public class User {
         this.cid = cid;
     }
 
+    public boolean isRole() {
+        return role;
+    }
+
+    public void setRole(boolean role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
-        return "User{" + "uid=" + uid + ", username=" + username + ", password=" + password + ", cid=" + cid + '}';
+        return "User{" + "uid=" + uid + ", username=" + username + ", password=" + password + ", cid=" + cid + ", role=" + role + '}';
     }
-    
+
 }
