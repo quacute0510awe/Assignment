@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Attendence Report</title>
         
         <style>
             a{
@@ -26,7 +26,7 @@
                 border-radius: 5px;
                 padding: 2px 4px;
                 font-weight: bold;
-                background-color: rgb(60, 105, 173);
+                background-color: rgb(93, 121, 205);
             }
         </style>
     </head>
@@ -36,7 +36,7 @@
 
             <div class="top-left">
                 <a class="header" href="home">Home</a> |
-                <a class="header">Attandance Status</a>
+                <a class="header">View attendence</a>
             </div>
 
             <div class='top-right'>
@@ -46,7 +46,7 @@
 
         </div>
         <c:if test="${requestScope.groups.size() == 0}">
-            <div style="color: red;">*No Group to view</div>
+            <div style="color: red;"></div>
         </c:if>
         <c:if test="${requestScope.groups.size() != 0}">
 
@@ -71,13 +71,13 @@
                 <% int numSession=0;%>
                 <tr class="header">
                     <td>No</td>
-                    <td>ID</td>
+                    <td>Student ID</td>
                     <td>Full Name</td>
                     <c:forEach items="${requestScope.sessions}" var="ses">
-                        <td>Session_No_${ses.index}</td>
+                        <td>Slot ${ses.index}</td>
                         <% numSession++;%>
                     </c:forEach>
-                    <td>Absent(%)</td>
+                    <td>Total Absent(%)</td>
                 </tr>
                 <%! double timeAbsent;%>
                 <c:forEach items="${requestScope.students}" var="student" varStatus="loop">
@@ -95,11 +95,11 @@
                                 </c:if>
                                 <c:if test="${a.session.attandated}">
                                     <c:if test="${a.present}">
-                                        <td class="attended">&#10004</td>
+                                        <td class="attended">Attend</td>
                                     </c:if>
                                     <c:if test="${!a.present}">
                                         <% timeAbsent++;%>
-                                        <td class="absent">&#10008</td>
+                                        <td class="absent">Absent</td>
                                     </c:if>
                                 </c:if>   
                             </c:if>
