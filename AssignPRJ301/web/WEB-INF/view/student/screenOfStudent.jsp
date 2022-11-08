@@ -1,10 +1,11 @@
 <%-- 
     Document   : screenOfStudent
-    Created on : Nov 7, 2022, 7:44:07 PM
+    Created on : Nov 8, 2022, 10:54:41 PM
     Author     : MY MSI
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -268,3 +269,4 @@
     </table>
     </body>
 </html>
+
